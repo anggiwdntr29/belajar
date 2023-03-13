@@ -24,7 +24,7 @@ class FormLogin extends Component {
   }
 
   onLogin() {
-    this.props.navigation.replace("Register");
+    this.props.navigation.replace("NavBar");
   }
 
   onRegister() {

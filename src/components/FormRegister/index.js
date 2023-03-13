@@ -28,7 +28,7 @@ class FormRegister extends Component {
   }
 
   onRegister() {
-    this.props.navigation.replace("OnBoarding");
+    this.props.navigation.replace("NavBar");
   }
   toggleShowPassword() {
     this.setState((prevState) => ({ showPassword: !prevState.showPassword }));

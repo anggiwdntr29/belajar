@@ -1,7 +1,13 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 import { FormLogin } from "../components";
-import { ScreenLogin, ScreenOnBoarding, ScreenRegister } from "../screen";
+import {
+  ScreenHome,
+  ScreenLogin,
+  ScreenOnBoarding,
+  ScreenRegister,
+} from "../screen";
+import NavBar from "./ButtonNavigation";
 
 const Stack = createNativeStackNavigator();
 
@@ -12,17 +18,43 @@ class Router extends React.Component {
         <Stack.Screen
           name="OnBoarding"
           component={ScreenOnBoarding}
-          options={{ headerShown: false }}
+          options={{
+            headerShown: false,
+            contentStyle: {
+              backgroundColor: "#FFFFFF", // ubah warna background konten di sini
+            },
+          }}
         />
+
         <Stack.Screen
           name="ScreenLogin"
           component={ScreenLogin}
-          options={{ headerShown: false }}
+          options={{
+            headerShown: false,
+            contentStyle: {
+              backgroundColor: "#FFFFFF", // ubah warna background konten di sini
+            },
+          }}
         />
         <Stack.Screen
           name="Register"
           component={ScreenRegister}
-          options={{ headerShown: false }}
+          options={{
+            headerShown: false,
+            contentStyle: {
+              backgroundColor: "#FFFFFF", // ubah warna background konten di sini
+            },
+          }}
+        />
+        <Stack.Screen
+          name="NavBar"
+          component={NavBar}
+          options={{
+            headerShown: false,
+            contentStyle: {
+              backgroundColor: "#FFFFFF",
+            },
+          }}
         />
         <Stack.Screen
           name="Login"

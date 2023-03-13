@@ -7,7 +7,7 @@ import Router from "./src/router";
 function App() {
   return (
     <NavigationContainer>
-      <StatusBar />
+      <StatusBar style="auto" />
       <SafeAreaView style={{ flex: 1, marginTop: 20 }}>
         <Router />
       </SafeAreaView>
