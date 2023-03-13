@@ -34,7 +34,7 @@ function ScreenLogin({ navigation }) {
         </HStack>
 
         <Stack alignItems={"center"}>
-          <Text fontWeight={"thin"} fontSize={"sm"} mt={10} mb={5}>
+          <Text fontWeight={"thin"} fontSize={"sm"} mt={5} mb={5}>
             Or continue with
           </Text>
           <Pressable
