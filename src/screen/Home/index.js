@@ -14,11 +14,7 @@ function ScreenHome({ navigation }) {
     <NativeBaseProvider>
       <HeaderHome navigation={navigation} />
       <ScrollView>
-        <ScrollView>
-          <HStack>
-            <CardMyCourse />
-          </HStack>
-        </ScrollView>
+        <CardMyCourse />
       </ScrollView>
     </NativeBaseProvider>
   );
