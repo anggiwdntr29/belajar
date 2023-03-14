@@ -31,7 +31,7 @@ const CardMyCourse = () => {
                   source={{ uri: `${MyCourse.image}` }}
                   alt={"img"}
                   w={"160px"}
-                  h={"120px"}
+                  h={"100px"}
                   borderRadius={10}
                 />
               </Center>
@@ -39,8 +39,7 @@ const CardMyCourse = () => {
                 mt={2}
                 h={"48px"}
                 fontSize={"sm"}
-                fontWeight={"semibold"}
-                textAlign={"justify"}
+                fontWeight={"medium"}
                 color={Warna.putih}
               >
                 {MyCourse.title}
