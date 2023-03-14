@@ -8,7 +8,13 @@ import {
   Stack,
   VStack,
 } from "native-base";
-import { CardMyCourse, HeaderHome, QRComponent, Warna } from "../../components";
+import {
+  BannerSlider,
+  CardMyCourse,
+  HeaderHome,
+  QRComponent,
+  Warna,
+} from "../../components";
 
 function ScreenHome({ navigation }) {
   return (
@@ -48,6 +54,7 @@ function ScreenHome({ navigation }) {
                 See all
               </Text>
             </HStack>
+            <BannerSlider />
           </VStack>
         </VStack>
       </ScrollView>
