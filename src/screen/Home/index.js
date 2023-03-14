@@ -1,12 +1,25 @@
 import React from "react";
-import { Text, NativeBaseProvider, Center } from "native-base";
+import {
+  Text,
+  NativeBaseProvider,
+  Center,
+  ScrollView,
+  HStack,
+  Stack,
+} from "native-base";
+import { CardMyCourse, HeaderHome, QRComponent } from "../../components";
 
-function ScreenHome() {
+function ScreenHome({ navigation }) {
   return (
     <NativeBaseProvider>
-      <Center flex={1} bg="#fff">
-        <Text>Home</Text>
-      </Center>
+      <HeaderHome navigation={navigation} />
+      <ScrollView>
+        <ScrollView>
+          <HStack>
+            <CardMyCourse />
+          </HStack>
+        </ScrollView>
+      </ScrollView>
     </NativeBaseProvider>
   );
 }
