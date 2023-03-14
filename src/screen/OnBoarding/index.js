@@ -9,13 +9,13 @@ import {
   Stack,
 } from "native-base";
 import React from "react";
-
+import { Warna } from "../../components/";
 function ScreenOnBoarding() {
   const navigation = useNavigation();
   return (
     <NativeBaseProvider>
       <Center flex={1} px={10}>
-        <Avatar size="200px" />
+        <Avatar size="200px" source={require("../../../assets/logo.png")} />
         <Text fontSize={"2xl"} fontWeight={"semibold"} mt={10} mb={2}>
           Koding Akademi Mobile
         </Text>
@@ -30,6 +30,7 @@ function ScreenOnBoarding() {
         <Button
           variant={"outline"}
           borderRadius={10}
+          borderColor={Warna.primary}
           w={"100%"}
           h={12}
           border
@@ -37,9 +38,12 @@ function ScreenOnBoarding() {
           mb={5}
           onPress={() => navigation.replace("Register")}
         >
-          <Text fontSize={"md"}>Register</Text>
+          <Text fontSize={"md"} color={Warna.primary}>
+            Register
+          </Text>
         </Button>
         <Button
+          bg={Warna.primary}
           variant={"solid"}
           borderRadius={10}
           w={"100%"}
@@ -59,7 +63,7 @@ function ScreenOnBoarding() {
               Linking.openURL("https://www.google.com");
             }}
           >
-            <Avatar size={10} />
+            <Avatar size={10} source={require("../../../assets/google.png")} />
           </Pressable>
         </Stack>
       </Center>
