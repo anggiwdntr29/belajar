@@ -11,6 +11,7 @@ import {
   IconButton,
 } from "native-base";
 import { Ionicons } from "@expo/vector-icons";
+import { Warna } from "../";
 
 class FormLogin extends Component {
   constructor(props) {
@@ -43,6 +44,8 @@ class FormLogin extends Component {
             <Stack space={2}>
               <FormControl.Label>Email</FormControl.Label>
               <Input
+                borderColor={Warna.primary}
+                borderRadius={10}
                 variant={"outline"}
                 p={3}
                 value={this.state.email}
@@ -53,6 +56,8 @@ class FormLogin extends Component {
             <Stack space={2}>
               <FormControl.Label>Password</FormControl.Label>
               <Input
+                borderColor={Warna.primary}
+                borderRadius={10}
                 variant={"outline"}
                 p={3}
                 value={this.state.password}
@@ -65,8 +70,13 @@ class FormLogin extends Component {
                     icon={
                       <Icon
                         as={Ionicons}
-                        name={this.state.showPassword ? "eye" : "eye-off"}
+                        name={
+                          this.state.showPassword
+                            ? "eye-outline"
+                            : "eye-off-outline"
+                        }
                         size={5}
+                        color={Warna.secondary}
                       />
                     }
                     variant="unstyled"
@@ -82,8 +92,10 @@ class FormLogin extends Component {
           </Button>
         </FormControl>
         <Button
-          my={5}
-          variant={"solid"}
+          bg={Warna.primary}
+          mt={2}
+          mb={5}
+          variant={"unstyled"}
           borderRadius={10}
           w={"100%"}
           h={12}

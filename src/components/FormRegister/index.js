@@ -10,6 +10,7 @@ import {
   Text,
 } from "native-base";
 import { Ionicons } from "@expo/vector-icons";
+import { Warna } from "../Style";
 
 class FormRegister extends Component {
   constructor(props) {
@@ -46,6 +47,8 @@ class FormRegister extends Component {
             <Stack space={2}>
               <FormControl.Label>Name</FormControl.Label>
               <Input
+                borderColor={Warna.primary}
+                borderRadius={10}
                 variant={"outline"}
                 p={3}
                 value={this.state.name}
@@ -56,6 +59,8 @@ class FormRegister extends Component {
             <Stack space={2}>
               <FormControl.Label>Email</FormControl.Label>
               <Input
+                borderColor={Warna.primary}
+                borderRadius={10}
                 variant={"outline"}
                 p={3}
                 value={this.state.email}
@@ -66,6 +71,8 @@ class FormRegister extends Component {
             <Stack space={2}>
               <FormControl.Label>Password</FormControl.Label>
               <Input
+                borderColor={Warna.primary}
+                borderRadius={10}
                 variant={"outline"}
                 p={3}
                 value={this.state.password}
@@ -78,8 +85,13 @@ class FormRegister extends Component {
                     icon={
                       <Icon
                         as={Ionicons}
-                        name={this.state.showPassword ? "eye" : "eye-off"}
+                        name={
+                          this.state.showPassword
+                            ? "eye-outline"
+                            : "eye-off-outline"
+                        }
                         size={5}
+                        color={Warna.secondary}
                       />
                     }
                     variant="unstyled"
@@ -90,6 +102,8 @@ class FormRegister extends Component {
             <Stack space={2}>
               <FormControl.Label>Confirm Password</FormControl.Label>
               <Input
+                borderColor={Warna.primary}
+                borderRadius={10}
                 variant={"outline"}
                 p={3}
                 value={this.state.confirmPassword}
@@ -105,9 +119,12 @@ class FormRegister extends Component {
                       <Icon
                         as={Ionicons}
                         name={
-                          this.state.showConfirmPassword ? "eye" : "eye-off"
+                          this.state.showConfirmPassword
+                            ? "eye-outline"
+                            : "eye-off-outline"
                         }
                         size={5}
+                        color={Warna.secondary}
                       />
                     }
                     variant="unstyled"
@@ -119,7 +136,8 @@ class FormRegister extends Component {
         </FormControl>
         <Button
           my={5}
-          variant={"solid"}
+          variant={"unstyled"}
+          bg={Warna.primary}
           borderRadius={10}
           w={"100%"}
           h={12}

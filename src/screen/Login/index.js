@@ -8,7 +8,7 @@ import {
   HStack,
   Avatar,
 } from "native-base";
-import { FormLogin } from "../../components";
+import { FormLogin, Warna } from "../../components";
 
 function ScreenLogin({ navigation }) {
   return (
@@ -27,7 +27,7 @@ function ScreenLogin({ navigation }) {
         <HStack>
           <Text fontSize={"xs"}>Don't have an account? </Text>
           <Pressable onPress={() => navigation.replace("Register")}>
-            <Text fontSize={"xs"} fontWeight={"semibold"}>
+            <Text fontSize={"xs"} fontWeight={"semibold"} color={Warna.primary}>
               Register here!
             </Text>
           </Pressable>
@@ -42,7 +42,7 @@ function ScreenLogin({ navigation }) {
               Linking.openURL("https://www.google.com");
             }}
           >
-            <Avatar size={10} />
+            <Avatar size={10} source={require("../../../assets/google.png")} />
           </Pressable>
         </Stack>
       </Center>

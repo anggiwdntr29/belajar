@@ -28,7 +28,9 @@ function ScreenOnBoarding() {
           Welcome to the Koding Academy Mobile App!
         </Text>
         <Button
-          variant={"outline"}
+          bgColor={Warna.putih}
+          variant={"unstyled"}
+          borderWidth={1}
           borderRadius={10}
           borderColor={Warna.primary}
           w={"100%"}
@@ -44,7 +46,7 @@ function ScreenOnBoarding() {
         </Button>
         <Button
           bg={Warna.primary}
-          variant={"solid"}
+          variant={"unstyled"}
           borderRadius={10}
           w={"100%"}
           h={12}

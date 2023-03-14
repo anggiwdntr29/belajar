@@ -8,14 +8,14 @@ import {
   Avatar,
   HStack,
 } from "native-base";
-import { FormRegister } from "../../components";
+import { FormRegister, Warna } from "../../components";
 
 function ScreenRegister({ navigation }) {
   return (
     <NativeBaseProvider>
       <Center p={10}>
         <Stack w={"100%"}>
-          <Text fontSize={"2xl"} fontWeight={"semibold"}>
+          <Text fontSize={"2xl"} fontWeight={"semibold"} color={Warna.primary}>
             Create Account
           </Text>
           <Text
@@ -32,7 +32,7 @@ function ScreenRegister({ navigation }) {
         <HStack>
           <Text fontSize={"xs"}>Already have an account? </Text>
           <Pressable onPress={() => navigation.replace("ScreenLogin")}>
-            <Text fontSize={"xs"} fontWeight={"semibold"}>
+            <Text fontSize={"xs"} fontWeight={"semibold"} color={Warna.primary}>
               Login here!
             </Text>
           </Pressable>
@@ -46,7 +46,7 @@ function ScreenRegister({ navigation }) {
               Linking.openURL("https://www.google.com");
             }}
           >
-            <Avatar size={10} />
+            <Avatar size={10} source={require("../../../assets/google.png")} />
           </Pressable>
         </Stack>
       </Center>
