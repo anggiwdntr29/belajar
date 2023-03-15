@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Center,
   HStack,
   Image,
@@ -54,9 +55,19 @@ const CardPromo = () => {
               >
                 {Promo.OldPrice}
               </Text>
-              <Text fontSize={"sm"} fontWeight={"normal"}>
+              <Text fontSize={"md"} fontWeight={"medium"}>
                 {Promo.NewPrice}
               </Text>
+              <Button
+                my={2}
+                borderRadius={10}
+                variant={"unstyled"}
+                bg={Warna.primary}
+              >
+                <Text fontWeight={"semibold"} color={Warna.putih}>
+                  Add to cart
+                </Text>
+              </Button>
             </Box>
           ))}
         </HStack>

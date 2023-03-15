@@ -14,7 +14,7 @@ const Promo = [
     NewPrice: "Rp705.000",
   },
   {
-    id: 2,
+    id: 3,
     image: "https://picsum.photos/1200",
     title: "Arduino Beginner",
     OldPrice: "Rp3.000.000",
