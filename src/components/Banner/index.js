@@ -1,22 +1,39 @@
 import React from "react";
-import { View, Image } from "native-base";
+import {
+  View,
+  Image,
+  Box,
+  NativeBaseProvider,
+  HStack,
+  ScrollView,
+} from "native-base";
 import Swiper from "react-native-swiper";
 import Banner from "../Data/Banner";
+import { Warna } from "../Style";
 
 const BannerSlider = () => {
   return (
-    <View>
-      <Swiper autoplay autoplayTimeout={5} height={140} showsPagination={false}>
-        {Banner.map((image) => (
+    <NativeBaseProvider>
+      <Swiper
+        autoplay={true}
+        loop={true}
+        height={140}
+        paginationStyle={{ bottom: 5 }}
+        dotColor={Warna.secondary}
+        activeDotColor={Warna.primary}
+      >
+        {Banner.map((Banner) => (
           <Image
-            key={image.id}
-            source={{ uri: `${image.image}` }}
-            h={140}
+            key={Banner.id}
+            source={{ uri: `${Banner.image}` }}
             alt={"img"}
+            w={"100%"}
+            h={140}
+            borderRadius={10}
           />
         ))}
       </Swiper>
-    </View>
+    </NativeBaseProvider>
   );
 };
 
