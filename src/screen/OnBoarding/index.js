@@ -10,6 +10,7 @@ import {
 } from "native-base";
 import React from "react";
 import { Warna } from "../../components/";
+
 function ScreenOnBoarding() {
   const navigation = useNavigation();
   return (

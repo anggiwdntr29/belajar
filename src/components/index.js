@@ -5,6 +5,7 @@ import QRComponent from "./QR";
 import { Warna } from "./Style";
 import { CardMyCourse } from "./Card";
 import BannerSlider from "./Banner";
+import { CardArtikel } from "./Card";
 
 export {
   FormLogin,
@@ -14,4 +15,5 @@ export {
   Warna,
   CardMyCourse,
   BannerSlider,
+  CardArtikel,
 };

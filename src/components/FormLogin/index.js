@@ -11,7 +11,7 @@ import {
   IconButton,
 } from "native-base";
 import { Ionicons } from "@expo/vector-icons";
-import { Warna } from "../";
+import { Warna } from "../Style";
 
 class FormLogin extends Component {
   constructor(props) {

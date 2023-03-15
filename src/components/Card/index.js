@@ -1,3 +1,4 @@
 import CardMyCourse from "./MyCourse";
+import CardArtikel from "./Artikel";
 
-export { CardMyCourse };
+export { CardMyCourse, CardArtikel };
