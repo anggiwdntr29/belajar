@@ -3,9 +3,8 @@ import FormRegister from "./FormRegister";
 import HeaderHome from "./HeaderHome";
 import QRComponent from "./QR";
 import { Warna } from "./Style";
-import { CardMyCourse } from "./Card";
+import { CardMyCourse, CardArtikel, CardPromo } from "./Card";
 import BannerSlider from "./Banner";
-import { CardArtikel } from "./Card";
 
 export {
   FormLogin,
@@ -16,4 +15,5 @@ export {
   CardMyCourse,
   BannerSlider,
   CardArtikel,
+  CardPromo,
 };

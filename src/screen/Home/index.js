@@ -12,6 +12,7 @@ import {
   BannerSlider,
   CardArtikel,
   CardMyCourse,
+  CardPromo,
   HeaderHome,
   Warna,
 } from "../../components";
@@ -110,6 +111,7 @@ function ScreenHome({ navigation }) {
                 See all
               </Text>
             </HStack>
+            <CardPromo />
           </VStack>
         </VStack>
       </ScrollView>
