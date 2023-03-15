@@ -5,6 +5,7 @@ import {
   ScreenHome,
   ScreenLogin,
   ScreenOnBoarding,
+  ScreenQRDetail,
   ScreenRegister,
 } from "../screen";
 import NavBar from "./ButtonNavigation";
@@ -57,9 +58,14 @@ class Router extends React.Component {
           }}
         />
         <Stack.Screen
-          name="Login"
-          component={FormLogin}
-          render={(props) => <FormLogin {...props} />}
+          name="QRDetail"
+          component={ScreenQRDetail}
+          options={{
+            headerShown: false,
+            contentStyle: {
+              backgroundColor: "#FFFFFF",
+            },
+          }}
         />
       </Stack.Navigator>
     );
