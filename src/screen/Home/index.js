@@ -64,7 +64,7 @@ function ScreenHome({ navigation }) {
                 See all
               </Text>
             </HStack>
-            <Stack mx={5}>
+            <Stack>
               <BannerSlider />
             </Stack>
           </VStack>

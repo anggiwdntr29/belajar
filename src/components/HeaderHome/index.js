@@ -37,10 +37,10 @@ function HeaderHome({ navigation }) {
               />
             }
             variant="unstyled"
-            onPress={() => navigation.navigate("ScreenLogin")}
+            onPress={() => navigation.navigate("Cart")}
           />
         </HStack>
-        <Pressable onPress={() => navigation.navigate("ScreenLogin")}>
+        <Pressable onPress={() => navigation.navigate("QRDetail")}>
           <HStack
             space={5}
             alignItems={"center"}

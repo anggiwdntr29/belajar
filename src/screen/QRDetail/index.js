@@ -1,12 +1,22 @@
-import { Center, NativeBaseProvider } from "native-base";
+import {
+  Center,
+  Box,
+  Icon,
+  IconButton,
+  NativeBaseProvider,
+  Text,
+  ZStack,
+  Pressable,
+} from "native-base";
 import React from "react";
-import { QRComponent } from "../../components";
+import { Ionicons } from "@expo/vector-icons";
+import { QRComponent, Warna } from "../../components";
 
-const ScreenQRDetail = () => {
+const ScreenQRDetail = ({ navigation }) => {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
-        <Text>Anggi Widiantara</Text>
+      <Center>
+        <Text my={10}>Anggi Widiantara</Text>
         <QRComponent size={200} />
       </Center>
     </NativeBaseProvider>

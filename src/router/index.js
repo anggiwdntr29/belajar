@@ -2,6 +2,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 import { FormLogin } from "../components";
 import {
+  ScreenCart,
   ScreenHome,
   ScreenLogin,
   ScreenOnBoarding,
@@ -61,12 +62,13 @@ class Router extends React.Component {
           name="QRDetail"
           component={ScreenQRDetail}
           options={{
-            headerShown: false,
+            title: "QR Code",
             contentStyle: {
               backgroundColor: "#FFFFFF",
             },
           }}
         />
+        <Stack.Screen name="Cart" component={ScreenCart} options={{}} />
       </Stack.Navigator>
     );
   }
