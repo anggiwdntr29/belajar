@@ -7,6 +7,8 @@ import {
   HStack,
   Stack,
   VStack,
+  Pressable,
+  Button,
 } from "native-base";
 import {
   BannerSlider,
@@ -33,16 +35,27 @@ function ScreenHome({ navigation }) {
               <Text fontSize={"xl"} fontWeight={"semibold"}>
                 My Course
               </Text>
-              <Text
-                fontSize={"sm"}
-                fontWeight={"light"}
-                color={Warna.primary}
-                underline
+              <Button
+                onPress={() => navigation.navigate("Promo")}
+                variant={"unstyled"}
               >
-                See all
-              </Text>
+                <Text
+                  fontSize={"sm"}
+                  fontWeight={"light"}
+                  color={Warna.primary}
+                  underline
+                >
+                  See all
+                </Text>
+              </Button>
             </HStack>
-            <CardMyCourse />
+            <ScrollView
+              horizontal={true}
+              showsHorizontalScrollIndicator={false}
+              px={5}
+            >
+              <CardMyCourse flexDirection={"row"} />
+            </ScrollView>
           </VStack>
           <VStack bg={Warna.putih} pt={2} pb={5}>
             <HStack
@@ -55,14 +68,19 @@ function ScreenHome({ navigation }) {
                 Latest Events
               </Text>
 
-              <Text
-                fontSize={"sm"}
-                fontWeight={"light"}
-                color={Warna.primary}
-                underline
+              <Button
+                onPress={() => navigation.navigate("Promo")}
+                variant={"unstyled"}
               >
-                See all
-              </Text>
+                <Text
+                  fontSize={"sm"}
+                  fontWeight={"light"}
+                  color={Warna.primary}
+                  underline
+                >
+                  See all
+                </Text>
+              </Button>
             </HStack>
             <Stack>
               <BannerSlider />
@@ -78,16 +96,27 @@ function ScreenHome({ navigation }) {
               <Text fontSize={"xl"} fontWeight={"semibold"}>
                 Article
               </Text>
-              <Text
-                fontSize={"sm"}
-                fontWeight={"light"}
-                color={Warna.primary}
-                underline
+              <Button
+                onPress={() => navigation.navigate("Promo")}
+                variant={"unstyled"}
               >
-                See all
-              </Text>
+                <Text
+                  fontSize={"sm"}
+                  fontWeight={"light"}
+                  color={Warna.primary}
+                  underline
+                >
+                  See all
+                </Text>
+              </Button>
             </HStack>
-            <CardArtikel />
+            <ScrollView
+              horizontal={true}
+              showsHorizontalScrollIndicator={false}
+              px={5}
+            >
+              <CardArtikel flexDirection={"row"} />
+            </ScrollView>
           </VStack>
           <VStack bg={Warna.putih} pt={2} pb={5}>
             <HStack
@@ -104,16 +133,34 @@ function ScreenHome({ navigation }) {
                   Learning promo, limited time. Grab it fast!
                 </Text>
               </VStack>
-              <Text
-                fontSize={"sm"}
-                fontWeight={"light"}
-                color={Warna.primary}
-                underline
+              <Button
+                onPress={() => navigation.navigate("Promo")}
+                variant={"unstyled"}
               >
-                See all
-              </Text>
+                <Text
+                  fontSize={"sm"}
+                  fontWeight={"light"}
+                  color={Warna.primary}
+                  underline
+                >
+                  See all
+                </Text>
+              </Button>
             </HStack>
-            <CardPromo />
+            <ScrollView
+              horizontal={true}
+              showsHorizontalScrollIndicator={false}
+              px={5}
+            >
+              <CardPromo
+                flexDirection={"row"}
+                mr={8}
+                Bmr={2}
+                lebar={160}
+                shadow={1}
+                bg={Warna.putih}
+              />
+            </ScrollView>
           </VStack>
         </VStack>
       </ScrollView>

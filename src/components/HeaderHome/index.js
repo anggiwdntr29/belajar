@@ -16,7 +16,7 @@ import { Warna } from "../Style";
 function HeaderHome({ navigation }) {
   return (
     <NativeBaseProvider>
-      <VStack w={"100%"} bg={Warna.primary} px={5} pt={2} pb={4}>
+      <VStack w={"100%"} bg={Warna.biru} px={5} pt={2} pb={4}>
         <HStack justifyContent={"space-between"}>
           <VStack>
             <Text fontSize={"xl"} fontWeight={"semibold"} color={"white"}>

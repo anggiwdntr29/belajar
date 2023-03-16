@@ -29,7 +29,7 @@ const ScreenQRDetail = () => {
   return (
     <NativeBaseProvider>
       <Center mt={10}>
-        <Avatar bg={Warna.primary} size={16}>
+        <Avatar bg={Warna.biru} size={16}>
           <Text fontSize={"4xl"} fontWeight={"bold"} color={"white"}>
             {initial}
           </Text>

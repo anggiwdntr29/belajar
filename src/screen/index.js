@@ -6,6 +6,7 @@ import ScreenCourse from "./Course";
 import ScreenQRDetail from "./QRDetail";
 import ScreenCart from "./Cart";
 import ScreenPromo from "./Promo";
+import ScreenCourseDetail from "./CourseDetail";
 
 export {
   ScreenOnBoarding,
@@ -16,4 +17,5 @@ export {
   ScreenQRDetail,
   ScreenCart,
   ScreenPromo,
+  ScreenCourseDetail,
 };

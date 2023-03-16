@@ -3,9 +3,11 @@ import React from "react";
 import { FormLogin } from "../components";
 import {
   ScreenCart,
+  ScreenCourseDetail,
   ScreenHome,
   ScreenLogin,
   ScreenOnBoarding,
+  ScreenPromo,
   ScreenQRDetail,
   ScreenRegister,
 } from "../screen";
@@ -20,7 +22,7 @@ class Router extends React.Component {
       <Stack.Navigator
         screenOptions={{
           headerStyle: {
-            backgroundColor: Warna.primary,
+            backgroundColor: Warna.biru,
           },
           headerTintColor: Warna.putih,
         }}
@@ -66,6 +68,7 @@ class Router extends React.Component {
             },
           }}
         />
+
         <Stack.Screen
           name="QRDetail"
           component={ScreenQRDetail}
@@ -77,6 +80,13 @@ class Router extends React.Component {
           }}
         />
         <Stack.Screen name="Cart" component={ScreenCart} />
+        <Stack.Screen
+          name="CourseDetail"
+          component={ScreenCourseDetail}
+          options={{
+            title: "QR Code",
+          }}
+        />
       </Stack.Navigator>
     );
   }
