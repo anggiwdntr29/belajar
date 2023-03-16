@@ -1,36 +1,27 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import ScreenHome from "../screen/Home";
+import { ScreenHome, ScreenCourse, ScreenPromo } from "../screen";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import { Feather } from "@expo/vector-icons";
+import { FontAwesome5 } from "@expo/vector-icons";
 import { Warna } from "../components";
-import { ScreenCourse } from "../screen";
 
 const Tab = createBottomTabNavigator();
 
 function NavBar() {
   return (
-    <Tab.Navigator
-      screenOptions={({ route }) => ({
-        tabBarIcon: ({ focused, size, color }) => {
-          let iconName;
-
-          if (route.name === "Home") {
-            iconName = focused ? "ios-home" : "ios-home-outline";
-          }
-          if (route.name === "Course") {
-            iconName = focused ? "ios-newspaper" : "ios-newspaper-outline";
-          }
-          return <Ionicons name={iconName} size={size} color={Warna.primary} />;
-        },
-      })}
-    >
+    <Tab.Navigator>
       <Tab.Screen
         name="Home"
         component={ScreenHome}
         options={{
           headerShown: false,
           tabBarShowLabel: false,
+          tabBarIcon: ({ focused }) =>
+            focused ? (
+              <Ionicons name="home" size={24} color={Warna.primary} />
+            ) : (
+              <Ionicons name="home-outline" size={24} color={Warna.secondary} />
+            ),
         }}
       />
       <Tab.Screen
@@ -39,6 +30,34 @@ function NavBar() {
         options={{
           headerShown: false,
           tabBarShowLabel: false,
+          tabBarIcon: ({ focused }) =>
+            focused ? (
+              <Ionicons name="newspaper" size={24} color={Warna.primary} />
+            ) : (
+              <Ionicons
+                name="newspaper-outline"
+                size={24}
+                color={Warna.secondary}
+              />
+            ),
+        }}
+      />
+      <Tab.Screen
+        name="Promo"
+        component={ScreenPromo}
+        options={{
+          headerShown: false,
+          tabBarShowLabel: false,
+          tabBarIcon: ({ focused }) =>
+            focused ? (
+              <FontAwesome5 name="percentage" size={24} color={Warna.primary} />
+            ) : (
+              <FontAwesome5
+                name="percentage"
+                size={24}
+                color={Warna.secondary}
+              />
+            ),
         }}
       />
     </Tab.Navigator>
