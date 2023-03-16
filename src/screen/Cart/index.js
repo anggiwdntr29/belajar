@@ -55,6 +55,39 @@ const ScreenCart = () => {
             />
           </Stack>
         </HStack>
+        <HStack space={5} bg={Warna.putih} padding={3} w={screenWidth}>
+          <Checkbox
+            value="test"
+            accessibilityLabel="This is a dummy checkbox"
+            flex={1}
+            colorScheme="yellow"
+            borderColor={Warna.primary}
+          ></Checkbox>
+          <Image
+            source={{ uri: "https://picsum.photos/1200" }}
+            alt={"img"}
+            h={"100px"}
+            w={"120px"}
+            borderRadius={10}
+          />
+          <Stack w={"200px"}>
+            <Text fontSize={"sm"} fontWeight={"semibold"} h={"48px"}>
+              Game Programming for Intermediate
+            </Text>
+            <Text fontSize={"md"} fontWeight={"semibold"}>
+              Rp705.000
+            </Text>
+            <IconButton
+              variant={"unstyled"}
+              icon={
+                <Icon as={Feather} name="trash-2" size={5} color={"red.500"} />
+              }
+              justifyContent={"end"}
+              size={5}
+              mt={2}
+            />
+          </Stack>
+        </HStack>
         {/* <HStack space={5} bg={Warna.putih} padding={3} w={screenWidth}>
           <Checkbox
             value="test"
