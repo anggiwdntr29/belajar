@@ -10,20 +10,28 @@ import {
   ScreenRegister,
 } from "../screen";
 import NavBar from "./ButtonNavigation";
+import { Warna } from "../components";
 
 const Stack = createNativeStackNavigator();
 
 class Router extends React.Component {
   render() {
     return (
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          headerStyle: {
+            backgroundColor: Warna.primary,
+          },
+          headerTintColor: Warna.putih,
+        }}
+      >
         <Stack.Screen
           name="OnBoarding"
           component={ScreenOnBoarding}
           options={{
             headerShown: false,
             contentStyle: {
-              backgroundColor: "#FFFFFF", // ubah warna background konten di sini
+              backgroundColor: "#FFFFFF",
             },
           }}
         />
@@ -34,7 +42,7 @@ class Router extends React.Component {
           options={{
             headerShown: false,
             contentStyle: {
-              backgroundColor: "#FFFFFF", // ubah warna background konten di sini
+              backgroundColor: "#FFFFFF",
             },
           }}
         />
@@ -44,7 +52,7 @@ class Router extends React.Component {
           options={{
             headerShown: false,
             contentStyle: {
-              backgroundColor: "#FFFFFF", // ubah warna background konten di sini
+              backgroundColor: "#FFFFFF",
             },
           }}
         />
@@ -68,7 +76,7 @@ class Router extends React.Component {
             },
           }}
         />
-        <Stack.Screen name="Cart" component={ScreenCart} options={{}} />
+        <Stack.Screen name="Cart" component={ScreenCart} />
       </Stack.Navigator>
     );
   }
