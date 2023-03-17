@@ -23,7 +23,7 @@ const CardMyCourse = ({ flexDirection }) => {
             padding={2}
             mr={2}
             my={2}
-            shadow={1}
+            shadow={2}
           >
             <Center>
               <Image

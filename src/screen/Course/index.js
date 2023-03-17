@@ -28,20 +28,7 @@ export default function ScreenCourse() {
   return (
     <NativeBaseProvider>
       <Container maxWidth={"100%"} maxH={"100%"} alignItems={"center"}>
-        <Box
-          w={"100%"}
-          h={"54px"}
-          alignItems={"center"}
-          bgColor={Warna.primary}
-          justifyContent={"center"}
-          mb={3}
-          shadow={1}
-        >
-          <Text fontSize={"sm"} fontWeight={"semibold"} color={Warna.putih}>
-            Course
-          </Text>
-        </Box>
-        <Box alignItems="center" px={2} mb={3}>
+        <Box alignItems="center" px={2} my={3}>
           <Input
             borderRadius={35}
             bgColor={"white"}

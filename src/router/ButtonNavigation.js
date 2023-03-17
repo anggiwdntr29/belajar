@@ -9,7 +9,14 @@ const Tab = createBottomTabNavigator();
 
 function NavBar() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: Warna.biru,
+        },
+        headerTintColor: Warna.putih,
+      }}
+    >
       <Tab.Screen
         name="Home"
         component={ScreenHome}
@@ -28,7 +35,6 @@ function NavBar() {
         name="Course"
         component={ScreenCourse}
         options={{
-          headerShown: false,
           tabBarShowLabel: false,
           tabBarIcon: ({ focused }) =>
             focused ? (
@@ -46,7 +52,6 @@ function NavBar() {
         name="Promo"
         component={ScreenPromo}
         options={{
-          headerShown: false,
           tabBarShowLabel: false,
           tabBarIcon: ({ focused }) =>
             focused ? (

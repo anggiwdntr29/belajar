@@ -19,18 +19,6 @@ const screenWidth = Dimensions.get("window").width;
 const ScreenPromo = () => {
   return (
     <NativeBaseProvider>
-      <Box
-        w={"100%"}
-        h={"54px"}
-        alignItems={"center"}
-        bgColor={Warna.biru}
-        justifyContent={"center"}
-        shadow={1}
-      >
-        <Text fontSize={"sm"} fontWeight={"semibold"} color={Warna.putih}>
-          Course
-        </Text>
-      </Box>
       <ScrollView showsVerticalScrollIndicator={false}>
         <CardPromo
           p={5}
